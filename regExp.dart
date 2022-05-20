@@ -13,6 +13,7 @@ void main() {
 
   final color = RegExp(r'0[xX][0-9a-fA-F]+').stringMatch(text);
   final hexColor = color?.split('0x').last;
+  
 
   final blenMode = RegExp(r'(?<=\BlendMode.).+?(?=\))').stringMatch(text);
 
